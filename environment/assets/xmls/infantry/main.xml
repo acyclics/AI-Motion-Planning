@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco>
+	<asset>
+        <mesh name="shell0" file="rmashells/shell0.stl" scale="1 1 1"/>
+        <mesh name="shell1" file="rmashells/shell1.stl" scale="1 1 1"/>
+        <mesh name="shell2" file="rmashells/shell2.stl" scale="1 1 1"/>
+        <mesh name="shell3" file="rmashells/shell3.stl" scale="1 1 1"/>
+        <mesh name="shell4" file="rmashells/shell4.stl" scale="1 1 1"/>
+        <mesh name="shell5" file="rmashells/shell5.stl" scale="1 1 1"/>
+        <mesh name="shell6" file="rmashells/shell6.stl" scale="1 1 1"/>
+        <mesh name="shell7" file="rmashells/shell7.stl" scale="1 1 1"/>
+        <mesh name="shell8" file="rmashells/shell8.stl" scale="1 1 1"/>
+        <mesh name="shell9" file="rmashells/shell9.stl" scale="1 1 1"/>
+        <mesh name="shell10" file="rmashells/shell10.stl" scale="1 1 1"/>
+        <mesh name="shell11" file="rmashells/shell11.stl" scale="1 1 1"/>
+        <mesh name="shell12" file="rmashells/shell12.stl" scale="1 1 1"/>
+        <mesh name="shell13" file="rmashells/shell13.stl" scale="1 1 1"/>
+        <mesh name="shell14" file="rmashells/shell14.stl" scale="1 1 1"/>
+        <mesh name="shell15" file="rmashells/shell15.stl" scale="1 1 1"/>
+        <mesh name="shell16" file="rmashells/shell16.stl" scale="1 1 1"/>
+        <mesh name="shell17" file="rmashells/shell17.stl" scale="1 1 1"/>
+        <mesh name="shell18" file="rmashells/shell18.stl" scale="1 1 1"/>
+        <mesh name="shell19" file="rmashells/shell19.stl" scale="1 1 1"/>
+        <mesh name="shell20" file="rmashells/shell20.stl" scale="1 1 1"/>
+        <mesh name="shell21" file="rmashells/shell21.stl" scale="1 1 1"/>
+        <mesh name="shell22" file="rmashells/shell22.stl" scale="1 1 1"/>
+        <mesh name="shell23" file="rmashells/shell23.stl" scale="1 1 1"/>
+        <mesh name="shell24" file="rmashells/shell24.stl" scale="1 1 1"/>
+        <mesh name="shell25" file="rmashells/shell25.stl" scale="1 1 1"/>
+        <mesh name="shell26" file="rmashells/shell26.stl" scale="1 1 1"/>
+        <mesh name="shell27" file="rmashells/shell27.stl" scale="1 1 1"/>
+        <mesh name="shell28" file="rmashells/shell28.stl" scale="1 1 1"/>
+        <mesh name="shell29" file="rmashells/shell29.stl" scale="1 1 1"/>
+        <mesh name="shell30" file="rmashells/shell30.stl" scale="1 1 1"/>
+        <mesh name="shell31" file="rmashells/shell31.stl" scale="1 1 1"/>
+        <mesh name="shell32" file="rmashells/shell32.stl" scale="1 1 1"/>
+        <mesh name="shell33" file="rmashells/shell33.stl" scale="1 1 1"/>
+        <mesh name="shell34" file="rmashells/shell34.stl" scale="1 1 1"/>
+        <mesh name="shell35" file="rmashells/shell35.stl" scale="1 1 1"/>
+        <mesh name="shell36" file="rmashells/shell36.stl" scale="1 1 1"/>
+        <mesh name="shell37" file="rmashells/shell37.stl" scale="1 1 1"/>
+        <mesh name="shell38" file="rmashells/shell38.stl" scale="1 1 1"/>
+        <mesh name="shell39" file="rmashells/shell39.stl" scale="1 1 1"/>
+        <mesh name="shell40" file="rmashells/shell40.stl" scale="1 1 1"/>
+        <mesh name="shell41" file="rmashells/shell41.stl" scale="1 1 1"/>
+        <mesh name="shell42" file="rmashells/shell42.stl" scale="1 1 1"/>
+        <mesh name="shell43" file="rmashells/shell43.stl" scale="1 1 1"/>
+        <mesh name="shell44" file="rmashells/shell44.stl" scale="1 1 1"/>
+        <mesh name="shell45" file="rmashells/shell45.stl" scale="1 1 1"/>
+        <mesh name="shell46" file="rmashells/shell46.stl" scale="1 1 1"/>
+        <mesh name="shell47" file="rmashells/shell47.stl" scale="1 1 1"/>
+        <mesh name="shell48" file="rmashells/shell48.stl" scale="1 1 1"/>
+        <mesh name="shell49" file="rmashells/shell49.stl" scale="1 1 1"/>
+        <mesh name="shell50" file="rmashells/shell50.stl" scale="1 1 1"/>
+        <mesh name="shell51" file="rmashells/shell51.stl" scale="1 1 1"/>
+        <mesh name="shell52" file="rmashells/shell52.stl" scale="1 1 1"/>
+        <mesh name="shell53" file="rmashells/shell53.stl" scale="1 1 1"/>
+        <mesh name="shell54" file="rmashells/shell54.stl" scale="1 1 1"/>
+        <mesh name="shell55" file="rmashells/shell55.stl" scale="1 1 1"/>
+        <mesh name="shell56" file="rmashells/shell56.stl" scale="1 1 1"/>
+	</asset>
+    <size nconmax="500" njmax="1000"></size>
+	<worldbody>
+		<body name="robot" pos="0 0 230">
+			<joint axis="1 0 0" name="x" pos="0 0 0" type="slide"></joint>
+            <site pos="0 0 0" name="tx" rgba="0 0 0 0" size="1 1 1" euler="0 0 0" type="sphere"></site>
+			<joint axis="0 1 0" name="y" pos="0 0 0" type="slide"></joint>
+            <site pos="0 0 0" name="ty" rgba="0 0 0 0" size="1 1 1" euler="0 0 90" type="sphere"></site>
+            <joint axis="0 0 1" damping="1000000000000" name="z" pos="0 0 0" type="slide"></joint>
+            <joint axis="0 0 1" damping="1000000" name="rz" pos="0 0 0" type="hinge"></joint>
+
+            <body name="mainframe" pos="-221 302 217" euler="270 0 0">
+                <site pos="217 221 -302" name="agent" rgba="0 0 0 0" size="1 1 1" euler="-270 0 0" type="sphere"></site>
+                <geom name="body1_r" mass="0.01" pos="0 0 0" mesh="shell0" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="body1_l" mass="0.01" pos="0 0 0" mesh="shell1" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell2" mass="0.01" pos="0 0 0" mesh="shell2" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell3" mass="0.01" pos="0 0 0" mesh="shell3" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="wheel_fl" condim="1" mass="0.01" pos="0 0 0" mesh="shell4" type="mesh" euler="0 0 0"></geom>
+                <site name="wheel_fl_site" pos="417 355 -507" rgba="0.517 0.3203 0.0001 0.0" size="30 60 80" euler="0 0 0" type="box"></site>
+                <geom name="wheel_fr" condim="1" mass="0.01" pos="0 0 0" mesh="shell5" type="mesh" euler="0 0 0"></geom>
+                <site name="wheel_fr_site" pos="25 355 -507" rgba="0.517 0.3203 0.0001 0.0" size="30 60 80" euler="0 0 0" type="box"></site>
+                <geom name="wheel_bl" condim="1" mass="0.01" pos="0 0 0" mesh="shell6" type="mesh" euler="0 0 0"></geom>
+                <site name="wheel_bl_site" pos="417 355 -92.5" rgba="0.517 0.3203 0.0001 0.0" size="30 60 80" euler="0 0 0" type="box"></site>
+                <geom name="wheel_br" condim="1" mass="0.01" pos="0 0 0" mesh="shell7" type="mesh" euler="0 0 0"></geom>
+                <site name="wheel_br_site" pos="25 355 -92.5" rgba="0.517 0.3203 0.0001 0.0" size="30 60 80" euler="0 0 0" type="box"></site>
+                <geom name="shell8" mass="0.01" pos="0 0 0" mesh="shell8" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell9" mass="0.01" pos="0 0 0" mesh="shell9" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell10" mass="0.01" pos="0 0 0" mesh="shell10" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell11" mass="0.01" pos="0 0 0" mesh="shell11" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell12" mass="0.01" pos="0 0 0" mesh="shell12" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell13" mass="0.01" pos="0 0 0" mesh="shell13" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell14" mass="0.01" pos="0 0 0" mesh="shell14" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell15" mass="0.01" pos="0 0 0" mesh="shell15" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell16" mass="0.01" pos="0 0 0" mesh="shell16" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell17" mass="0.01" pos="0 0 0" mesh="shell17" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell18" mass="0.01" pos="0 0 0" mesh="shell18" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell19" mass="0.01" pos="0 0 0" mesh="shell19" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell20" mass="0.01" pos="0 0 0" mesh="shell20" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell21" mass="0.01" pos="0 0 0" mesh="shell21" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell22" mass="0.01" pos="0 0 0" mesh="shell22" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell23" mass="0.01" pos="0 0 0" mesh="shell23" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="armor_r" mass="0.01" pos="0 0 0" mesh="shell24" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <site name="armor_r_site" pos="222 325 -560" rgba="0.017 0.7203 0.5001 0.0" size="75 67 25" euler="-16.5 0 0" type="box"></site>
+                <geom name="armor_b" mass="0.01" pos="0 0 0" mesh="shell25" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <site name="armor_b_site" pos="222 325 -40" rgba="0.017 0.7203 0.5001 0.0" size="75 67 25" euler="16.5 0 0" type="box"></site>
+                <geom name="armor_f" mass="0.01" pos="0 0 0" mesh="shell26" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <site name="armor_f_site" pos="45 325 -297" rgba="0.017 0.7203 0.5001 0.0" size="25 67 75" euler="0 0 16.5" type="box"></site>
+                <geom name="armor_l" mass="0.01" pos="0 0 0" mesh="shell27" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <site name="armor_l_site" pos="395 325 -297" rgba="0.017 0.7203 0.5001 0.0" size="25 67 75" euler="0 0 -16.5" type="box"></site>
+                <geom name="bar_f" mass="0.01" pos="0 0 0" mesh="shell28" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <site name="bar_f_site" pos="222 375.5 -507.5" rgba="0.017 0.1203 0.5001 0.0" size="170 35 35" euler="0 0 0" type="box"></site>
+                <geom name="shell29" mass="0.01" pos="0 0 0" mesh="shell29" type="mesh" euler="0 0 0"></geom>
+                <geom name="bar_b" mass="0.01" pos="0 0 0" mesh="shell30" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <site name="bar_b_site" pos="222 375.5 -95" rgba="0.017 0.1203 0.5001 0.0" size="170 35 35" euler="0 0 0" type="box"></site>
+                <geom name="barrel" mass="0.01" pos="0 0 0" mesh="shell31" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell32" mass="0.01" pos="0 0 0" mesh="shell32" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell33" mass="0.01" pos="0 0 0" mesh="shell33" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="body2_r" mass="0.01" pos="0 0 0" mesh="shell34" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="body2_l" mass="0.01" pos="0 0 0" mesh="shell35" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell36" mass="0.01" pos="0 0 0" mesh="shell36" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell37" mass="0.01" pos="0 0 0" mesh="shell37" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell38" mass="0.01" pos="0 0 0" mesh="shell38" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell39" mass="0.01" pos="0 0 0" mesh="shell39" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell40" mass="0.01" pos="0 0 0" mesh="shell40" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell41" mass="0.01" pos="0 0 0" mesh="shell41" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell42" mass="0.01" pos="0 0 0" mesh="shell42" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell43" mass="0.01" pos="0 0 0" mesh="shell43" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell44" mass="0.01" pos="0 0 0" mesh="shell44" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell45" mass="0.01" pos="0 0 0" mesh="shell45" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell46" mass="0.01" pos="0 0 0" mesh="shell46" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell47" mass="0.01" pos="0 0 0" mesh="shell47" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell48" mass="0.01" pos="0 0 0" mesh="shell48" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell49" mass="0.01" pos="0 0 0" mesh="shell49" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell50" mass="0.01" pos="0 0 0" mesh="shell50" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell51" mass="0.01" pos="0 0 0" mesh="shell51" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell52" mass="0.01" pos="0 0 0" mesh="shell52" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell53" mass="0.01" pos="0 0 0" mesh="shell53" type="mesh" rgba="1 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell54" mass="0.01" pos="0 0 0" mesh="shell54" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell55" mass="0.01" pos="0 0 0" mesh="shell55" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <geom name="shell56" mass="0.01" pos="0 0 0" mesh="shell56" type="mesh" rgba="0 0 0 1" euler="0 0 0"></geom>
+                <site name="body_site" pos="221 341 -297" rgba="0.417 0.7203 0.0001 0.0" size="120 60 180" euler="0 0 0" type="box"></site>
+                <site name="barrel_sight" pos="221 79 -307" rgba="0.017 0.1203 0.5001 0.0" size="5 5 5" euler="0 0 0" type="sphere"></site>
+                <site pos="217 221 -302" name="no_enter_zone" rgba="0.417 0.7203 0.0001 0.0" size="250 325 200" euler="-270 0 0" type="box"></site>
+            </body>
+		</body>
+        <body name="annotation:outer_bound" pos="0 0 260">
+			<geom conaffinity="0" contype="0" mass="0" pos="0 0 0" rgba="0.417 0.7203 0.0001 0.0" size="350 350 350" type="box"></geom>
+		</body>
+	</worldbody>
+    <actuator>
+        <velocity name="motortx" kv="100" ctrllimited="true" ctrlrange="-2000 2000" forcelimited="true" forcerange="-1000000000 1000000000" site="tx"></velocity>
+		<velocity name="motorty" kv="100" ctrllimited="true" ctrlrange="-3000 3000" forcelimited="true" forcerange="-1000000000 1000000000" site="ty"></velocity>
+		<velocity name="motorrz" kv="100" ctrllimited="true" ctrlrange="-47123.9 47123.9" forcelimited="true" forcerange="-100000000 100000000" joint="rz"></velocity>
+	</actuator>
+    <sensor>
+        <touch name="wheel_fl_touch" site="wheel_fl_site"></touch>
+        <touch name="wheel_fr_touch" site="wheel_fr_site"></touch>
+        <touch name="wheel_bl_touch" site="wheel_bl_site"></touch>
+        <touch name="wheel_br_touch" site="wheel_br_site"></touch>
+        <touch name="armor_r_touch" site="armor_r_site"></touch>
+        <touch name="armor_b_touch" site="armor_b_site"></touch>
+        <touch name="armor_f_touch" site="armor_f_site"></touch>
+        <touch name="armor_l_touch" site="armor_l_site"></touch>
+        <touch name="bar_f_touch" site="bar_f_site"></touch>
+        <touch name="bar_b_touch" site="bar_b_site"></touch>
+        <touch name="body_touch" site="body_site"></touch>
+        <touch name="no_enter_zone_touch" site="no_enter_zone"></touch>
+        <velocimeter name="velocimeter" site="agent"></velocimeter>
+    </sensor>
+</mujoco>

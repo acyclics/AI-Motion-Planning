@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco>
+    <asset>
+        <texture name="rm_red_marker_texture" file="rm_red_marker.png" type="2d"/>
+        <texture name="rm_blue_marker_texture" file="rm_blue_marker.png" type="2d"/>
+        <texture name="rm_buff_marker_texture" file="rm_buff_marker.png" type="2d"/>
+        <material name="rm_red_marker" texture="rm_red_marker_texture"/>
+        <material name="rm_blue_marker" texture="rm_blue_marker_texture"/>
+        <material name="rm_buff_marker" texture="rm_buff_marker_texture"/>
+    </asset>
+	<worldbody>
+            <body name="competition_area" pos="4040 2240 0">
+                <geom name="floor" type="plane" rgba="1 1 1 1" size="4040 2240 100"/>
+
+                <site name="blue_marker1" type="box" size="500 500 1" pos="-3540 -1740 0" euler="0 0 270" material="rm_blue_marker"/>
+                <site name="blue_marker2" type="box" size="500 500 1" pos="-3540 1740 0" euler="0 0 270" material="rm_blue_marker"/>
+                <site name="red_marker1" type="box" size="500 500 1" pos="3540 -1740 0" euler="0 0 90" material="rm_red_marker"/>
+                <site name="red_marker2" type="box" size="500 500 1" pos="3540 1740 0" euler="0 0 90" material="rm_red_marker"/>
+
+                <body name="B1" pos="-3540 1140 200">
+                    <geom name="B1_geom" type="box" size="500 100 200" euler="0 0 0"/>
+                    <site name="B1_site" type="box" size="500 100 200" rgba="1 1 1 0" euler="0 0 0"/>
+                </body>
+
+                <body name="B2" pos="-2140 0 200">
+                    <geom name="B2_geom" type="box" size="400 100 200" euler="0 0 0"/>
+                    <site name="B2_site" type="box" size="400 100 200" rgba="1 1 1 0" euler="0 0 0"/>
+                </body>
+
+                <body name="B3" pos="-2440 -1740 200">
+                    <geom name="B3_geom" type="box" size="500 100 200" euler="0 0 90"/>
+                    <site name="B3_site" type="box" size="500 100 200" rgba="1 1 1 0" euler="0 0 90"/>
+                </body>
+
+                <body name="B4" pos="0 1205 200">
+                    <geom name="B4_geom" type="box" size="500 100 200" euler="0 0 0"/>
+                    <site name="B4_site" type="box" size="500 100 200" rgba="1 1 1 0" euler="0 0 0"/>
+                </body>
+
+                <body name="B5" pos="0 0 200">
+                    <geom name="B5_geom" type="box" size="125 125 200" euler="0 0 45"/>
+                    <site name="B5_site" type="box" size="125 125 200" rgba="1 1 1 0" euler="0 0 45"/>
+                </body>
+
+                <body name="B6" pos="0 -1205 200">
+                    <geom name="B6_geom" type="box" size="500 100 200" euler="0 0 0"/>
+                    <site name="B6_site" type="box" size="500 100 200" rgba="1 1 1 0" euler="0 0 0"/>
+                </body>
+                
+                <body name="B7" pos="2440 1740 200">
+                    <geom name="B7_geom" type="box" size="500 100 200" euler="0 0 90"/>
+                    <site name="B7_site" type="box" size="500 100 200" rgba="1 1 1 0" euler="0 0 90"/>
+                </body>
+
+                <body name="B8" pos="2140 0 200">
+                    <geom name="B8_geom" type="box" size="400 100 200" euler="0 0 0"/>
+                    <site name="B8_site" type="box" size="400 100 200" rgba="1 1 1 0" euler="0 0 0"/>
+                </body>
+
+                <body name="B9" pos="3540 -1140 200">
+                    <geom name="B9_geom" type="box" size="500 100 200" euler="0 0 0"/>
+                    <site name="B9_site" type="box" size="500 100 200" rgba="1 1 1 0" euler="0 0 0"/>
+                </body>
+
+                <site name="F1" type="box" size="270 240 1" pos="-3540 550 0" euler="0 0 0" material="rm_buff_marker"/>
+                <site name="F2" type="box" size="270 240 1" pos="-2140 -590 0" euler="0 0 0" material="rm_buff_marker"/>
+                <site name="F3" type="box" size="270 240 1" pos="0 1795 0" euler="0 0 0" material="rm_buff_marker"/>
+                <site name="F4" type="box" size="270 240 1" pos="3540 -550 0" euler="0 0 0" material="rm_buff_marker"/>
+                <site name="F5" type="box" size="270 240 1" pos="2140 590 0" euler="0 0 0" material="rm_buff_marker"/>
+                <site name="F6" type="box" size="270 240 1" pos="0 -1795 0" euler="0 0 0" material="rm_buff_marker"/>
+            </body>
+
+            <site name="dest_marker1" type="sphere" size="100" pos="0 0 500" rgba="1 0 0 1"/>
+            <site name="dest_marker2" type="sphere" size="100" pos="0 0 500" rgba="0 1 0 1"/>
+
+            <body name="surrounding_walls" pos="4040 2240 0">
+                <geom name="sw_geom1" type="box" size="375 2700 230" rgba="1 1 1 0.1" pos="-4415 0 230"/>
+                <site name="sw_site1" type="box" size="375 2700 230" rgba="1 1 1 0" pos="-4415 0 230"/>
+                <geom name="sw_geom2" type="box" size="375 2700 230" rgba="1 1 1 0.1" pos="4415 0 230"/>
+                <site name="sw_site2" type="box" size="375 2700 230" rgba="1 1 1 0" pos="4415 0 230"/>
+                <geom name="sw_geom3" type="box" size="4800 375 230" rgba="1 1 1 0.1" pos="0 2615 230"/>
+                <site name="sw_site3" type="box" size="4800 375 230" rgba="1 1 1 0" pos="0 2615 230"/>
+                <geom name="sw_geom4" type="box" size="4800 375 230" rgba="1 1 1 0.1" pos="0 -2615 230"/>
+                <site name="sw_site4" type="box" size="4800 375 230" rgba="1 1 1 0" pos="0 -2615 230"/>
+            </body>
+	</worldbody>
+    <sensor>
+        <touch name="red_marker1_touch" site="red_marker1"/>
+        <touch name="red_marker2_touch" site="red_marker2"/>
+        <touch name="blue_marker1_touch" site="blue_marker1"/>
+        <touch name="blue_marker2_touch" site="blue_marker2"/>
+        <touch name="B1_site_touch" site="B1_site"/>
+        <touch name="B2_site_touch" site="B2_site"/>
+        <touch name="B3_site_touch" site="B3_site"/>
+        <touch name="B4_site_touch" site="B4_site"/>
+        <touch name="B5_site_touch" site="B5_site"/>
+        <touch name="B6_site_touch" site="B6_site"/>
+        <touch name="B7_site_touch" site="B7_site"/>
+        <touch name="B8_site_touch" site="B8_site"/>
+        <touch name="B9_site_touch" site="B9_site"/>
+        <touch name="sw_site1_touch" site="sw_site1"/>
+        <touch name="sw_site2_touch" site="sw_site2"/>
+        <touch name="sw_site3_touch" site="sw_site3"/>
+        <touch name="sw_site4_touch" site="sw_site4"/>
+    </sensor>
+</mujoco>
