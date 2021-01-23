@@ -6,6 +6,12 @@ The method of state-space decomposition of the AI robot came from "Decomposition
 
 # Diagrams from reachability analysis
 
-![](https://github.com/acyclics/AI-Motion-Planning/blob/master/examples/aimp_1.png) ![](https://github.com/acyclics/AI-Motion-Planning/blob/master/examples/aimp_2.png)
+<img src="https://github.com/acyclics/AI-Motion-Planning/blob/master/examples/aimp_1.png" width="500" height="500"> <img src="https://github.com/acyclics/AI-Motion-Planning/blob/master/examples/aimp_2.png" width="500" height="500">
 
-![](https://github.com/acyclics/AI-Motion-Planning/blob/master/examples/aimp_3.png) ![](https://github.com/acyclics/AI-Motion-Planning/blob/master/examples/aimp_4.png)
+<img src="https://github.com/acyclics/AI-Motion-Planning/blob/master/examples/aimp_3.png" width="500" height="500">
+
+# Using the computed optimal control from reachability analysis to track a target
+![](https://github.com/acyclics/AI-Motion-Planning/blob/master/examples/optctrl.gif)
+
+# Next step: train a reinforcement learning agent to motion-plan in simulation
+![](https://github.com/acyclics/AI-Motion-Planning/blob/master/examples/aimp_4.png)
